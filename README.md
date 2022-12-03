@@ -18,4 +18,7 @@ It is a frontend naming method to write clean css
 
 ## Quick commands
 
-`rafce ,`
+```rafce - create react component
+sanity start
+sanity manage
+```

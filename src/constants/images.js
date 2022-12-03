@@ -27,6 +27,7 @@ import profile from "../assets/profile.png";
 import aj from "../assets/aj.png";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
+import logoaj from "../assets/logoaj.png";
 
 import adidas from "../assets/adidas.png";
 import amazon from "../assets/amazon.png";
@@ -63,6 +64,7 @@ const exportedObject = {
   profile,
   circle,
   logo,
+  logoaj,
   adidas,
   amazon,
   asus,
