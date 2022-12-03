@@ -12,7 +12,7 @@ const scaleVariants = {
     scale: [0, 1],
     opacity: [0, 1],
     transition: {
-      duration: 0.5,
+      duration: 0.8,
       ease: "easeInOut",
     },
   },
@@ -34,15 +34,31 @@ const Header = () => {
               <h1 className='head-text'>Abhishek</h1>
             </div>
           </div>
-          <div className='tag-cmp app__flex'>
-            <p className='p-text'>
-              Full Stack <span> Web Developer </span>
-            </p>
-            <p className='p-text'>
-              <span>Cross-Platform App Developer</span>{" "}
-            </p>
-            <p className='p-text'>Blockchain Developer </p>
-          </div>
+          <motion.div
+            whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.6 }}
+            className='tag-cmp app__flex'
+          >
+            <p className='p-text'>Full Stack Developer</p>
+            {/* <p className='p-text'>IOS/ANDROID DEVELOPER</p>
+            <p className='p-text'>Blockchain Developer </p> */}
+          </motion.div>
+
+          <motion.div
+            whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.8 }}
+            className='tag-cmp app__flex'
+          >
+            <p className='p-text'>IOS/ANDROID DEVELOPER</p>
+          </motion.div>
+
+          <motion.div
+            whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.9 }}
+            className='tag-cmp app__flex'
+          >
+            <p className='p-text'>Blockchain Developer</p>
+          </motion.div>
         </div>
       </motion.div>
       <motion.div
@@ -64,7 +80,7 @@ const Header = () => {
         whileInView={scaleVariants.whileInView}
         className='app__header-circles'
       >
-        {[images.flutter, images.redux, images.sass].map((circle, index) => (
+        {[images.flutter, images.react, images.sass].map((circle, index) => (
           <div className='circle-cmp app__flex' key={`circle=${index}`}>
             <img src={circle} alt='circle' />
           </div>
